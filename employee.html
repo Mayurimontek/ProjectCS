@@ -77,7 +77,25 @@
                         <input type="text" placeholder="Enter Personal Address" class="form-control">
                             </div>
                         </div>
-                        
+                        <button class="btn btn-sm btn-danger" onclick="addSkills()">Add Skills</button>
+                           <button class="btn btn-sm btn-danger" onclick="addExperience()">Add Experience</button>
+                           <hr>
+                           <div class="form-group mt-2" id="tblSkill" style="display: none">
+                            <table class="table table-bordered">
+                                <input type="text" placeholder="Enter Skills" class="form-control m-2">
+                                <input type="text" placeholder="Enter Total Experience" class="form-control m-2">
+                                <input type="text" placeholder="Enter Last Version" class="form-control m-2">
+                            </table>
+                        </div>
+                        <div class="form-group mt-2" id="tblExperience" style="display: none">
+                            <table class="table table-bordered">
+                                <input type="text" placeholder="Enter Company Name" class="form-control m-2">
+                                <input type="date" placeholder="Start Date" class="form-control m-2">
+                                <input type="date" placeholder="End Date" class="form-control m-2">
+                                <input type="text" placeholder="Enter Designation" class="form-control m-2">
+                                <input type="text" placeholder="Project Worked On" class="form-control m-2">
+                            </table>
+                        </div>
                     </form>
                 </div>
                 <div class="card-footer">
@@ -93,6 +111,7 @@
                
                 
             </div>
+           
             <div class="col-md-7">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
@@ -120,7 +139,22 @@
                 </div>
                 
             </div>
+
         </div>
     </div>
+    <script>
+        var tblSkill,tblExp;
+        function addSkills(){
+            tblSkill = document.getElementById("tblSkill");
+            tblSkill.style.display ="block";
+            tblExp.style.display ='none';
+        }
+        function addExperience(){
+            tblExp =document.getElementById("tblExperience");
+            tblSkill.style.display ='none';
+            tblExp.style.display ="block";
+            
+        }
+    </script>
 </body>
 </html>
