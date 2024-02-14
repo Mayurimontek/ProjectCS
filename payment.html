@@ -17,7 +17,7 @@
                 <div class="col-md-7">
                     <div class="card" >
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <strong>Payment -Information</strong> 
+                            <strong>Payment Information</strong> 
                              <button type="button" class="btn btn-sm btn-danger">Add new</button>
                          </div>
                         <div class="card-body">
@@ -84,16 +84,16 @@
    
 
     <script>
-        function addClient(){
-            var formValue = document.getElementById("addClient");
-            var tableClientStrive = document.getElementById("tableClientStrive");
+        function addPayment(){
+            var formValue = document.getElementById("addPayment");
+            var tablePaymentStrive = document.getElementById("tablePaymentStrive");
             formValue.style.display ='block';
-            tableClientStrive.style.display ="none";
+            tablePaymentStrive.style.display ="none";
         }
        
         function hideForm(){
-            document.getElementById('tableClientStrive').style.display = "block";
-            document.getElementById('addClient').style.display = "none";
+            document.getElementById('tablePaymentStrive').style.display = "block";
+            document.getElementById('addPayment').style.display = "none";
         }
     </script>
 </body>
