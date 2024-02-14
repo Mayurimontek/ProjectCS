@@ -40,7 +40,7 @@
                 </div>
 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <div class="card" id="frmEmployee" style="display: none;">
                     <div class="card-header">
                         <strong>Add Employee</strong>
@@ -48,14 +48,18 @@
                     </div>
                     <div class="card-body">
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 Name :
                                 <input type="text" placeholder="Enter Name" class="form-control">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 Email :
                                 <input type="text" placeholder="Enter Email" class="form-control">
                             </div>
+                            <div class="form-group col-md-4">
+                                Password :
+                                 <input type="password" placeholder="Enter Password" class="form-control">
+                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -98,25 +102,46 @@
                             </div>
                         </div>
                         <div class="form-row">
+                            <div class="form-group col-md-12">
+                                Address :
+                                <textarea placeholder="Enter Address" class="form-control" ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
                             <div class="form-group col-md-6">
                                 Pincode :
                                 <input type="text" placeholder="Enter Pincode" class="form-control">
                             </div>
                             <div class="form-group col-md-6">
-                                Address :
-                                <input type="text" placeholder="Enter Address" class="form-control">
+                                Personal City :
+                                <input type="text" placeholder="Enter Personal City" class="form-control">
+                            </div>
+
+                        </div>
+                         <div class="form-row">
+                            
+                            <div class="form-group col-md-6">
+                                Personal State :
+                                <input type="text" placeholder="Enter Personal State" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                Personal Pin Code :
+                                <input type="text" placeholder="Enter Personal Pin Code" class="form-control">
+                            </div>
+                           
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                Personal Address :
+                                <textarea placeholder="Enter Personal Address" class="form-control"></textarea>
                             </div>
                         </div>
-                        
                         
                         <hr>
                         <div class="form-group mt-2" id="tblSkill">
                             <div class="container">
                                <h5>Add Skills -</h5>
                                 <div id="table-container">
-                                    <div class="d-flex justify-content-end">
-                                        <button class="btn btn-secondary" onclick="closeTable()">x</button>
-                                    </div>
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
@@ -140,8 +165,8 @@
                                                 </td>
                                               
                                                 <td class="btn-container">
-                                                    <button class="btn btn-success">Save</button>
-                                                    <button class="btn btn-danger"onclick="deleteRow()">Delete</button>
+                                                    <button class="btn btn-sm btn-success">Save</button>
+                                                    <button class="btn btn-sm btn-danger"onclick="deleteRow()">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -165,9 +190,6 @@
                             <div class="container">
                                 <h5>Add Experience -</h5>
                                 <div id="table-container">
-                                    <div class="d-flex justify-content-end">
-                                        <button class="btn btn-secondary" onclick="closeTableEx()">x</button>
-                                    </div>
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
@@ -175,6 +197,7 @@
                                                 <th>Start Date</th>
                                                 <th>End Date</th>
                                                 <th>Designation</th>
+                                                <th>Project</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
@@ -192,10 +215,13 @@
                                                 <td>
                                                     <input type="text" class="form-control" placeholder="Designation">
                                                 </td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="Project">
+                                                </td>
                                                
                                                 <td class="btn-container">
-                                                    <button class="btn btn-success">Save</button>
-                                                    <button class="btn btn-danger"onclick="deleteRow()">Delete</button>
+                                                    <button class="btn btn-sm btn-success">Save</button>
+                                                    <button class="btn btn-sm btn-danger"onclick="deleteRow()">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -240,23 +266,7 @@
             formValue.style.display ='block';
             tblEmployee.style.display ="none";
         }
-        var tblSkill =document.getElementById("tblSkill");
-        var tblExp=document.getElementById("tblExperience");
-        function addSkills() {
-            tblSkill.style.display = "block";
-            tblExp.style.display = "none";
-        }
-        function addExperience() {
-            tblExp.style.display = "block";
-            tblSkill.style.display = "none";
-            
-        }
-        function closeTable() {
-            document.getElementById('table-container').style.display = "none";
-        }
-        function closeTableEx() {
-            document.getElementById('tblExperience').style.display = "none";
-        }
+       
         function hideForm(){
             document.getElementById('tblEmployee').style.display = "block";
             document.getElementById('frmEmployee').style.display = "none";
