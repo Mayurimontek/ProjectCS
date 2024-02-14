@@ -9,8 +9,11 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
-       
-        input:hover {
+        .card-header {
+            background-color: rgb(235, 212, 13);
+        }
+
+        /* input:hover {
             background-color: rgb(67, 232, 193);
             border: 3px solid rgb(188, 180, 241)  ;
             box-shadow: 10px 10px 30px 5px rgba(16, 15, 15, 0.5);
@@ -24,84 +27,83 @@
         .card-body {
             background-color: rgb(181, 236, 217);
             box-shadow: 10px 10px 30px 5px rgba(16, 15, 15, 0.5);
-        }
-
-       
+        }*/
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8  ">
-                <div class="card text-center rounded-3 shadow-lg">
-                    <div class="card-header bg-info  ">
-                        <h3>Update Client Project</h3>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-6  ">
+                <div class="card  rounded-3 shadow-lg">
+                    <div class="card-header ">
+                        <h3>Add Project</h3>
                     </div>
                     <div class="card-body">
                         <form action=form-group>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class=form-group>
-                                        <label for=form-group class="form-label"><strong>Project Name</strong></label>
-                                        <input type="text" class="form-control">
+                                        <label for=form-group class="form-label">Contact Person</label>
+                                        <input type="text" placeholder="Enter Contact Person" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class=form-group>
-                                        <label for=form-group class="form-label">Start Date</label>
-                                        <input type="text" class="form-control">
+                                        <label for=form-group class="form-label">Contact Number</label>
+                                        <input type="text" placeholder="Enter Contact Number " class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class=form-group>
-                                        <label for=form-group class="form-label">Expected End Date</label>
-                                        <input type="text" class="form-control">
+                                        <label for=form-group class="form-label">Person EmailId</label>
+                                        <input type="email" placeholder="Enter Person EmailId" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
 
                                     <div class=form-group>
-                                        <label for=form-group class="form-label">Completed Date</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class=form-group>
-                                        <label for=form-group class="form-label">Contact Person</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class=form-group>
-                                        <label for=form-group class="form-label">Contact Person Contact Number</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class=form-group>
                                         <label for=form-group class="form-label">Total Employee Working</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" placeholder="Enter Total Employee Working"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class=form-group>
+                                        <label for=form-group class="form-label">Project Name</label>
+                                        <input type="text" placeholder="Enter Project Name" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <div class=form-group>
+                                        <label for=form-group class="form-label">Start Date</label>
+                                        <input type="date" placeholder="Enter Start Date " class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class=form-group>
+                                        <label for=form-group class="form-label">Expected End Date</label>
+                                        <input type="date" placeholder="Enter Expected End Date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class=form-group>
+                                        <label for=form-group class="form-label">Completed Date</label>
+                                        <input type="date" placeholder="Enter Expected End Date" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class=form-group>
                                         <label for=form-group class="form-label">Project Cost</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" placeholder="Enter Project Cost" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class=form-group>
                                         <label for=form-group class="form-label">Project Details</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" placeholder="Enter Project Details" class="form-control">
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class=form-group>
-                                        <label for=form-group class="form-label">Contact Person EmailId</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
+                                </div> -->
                                 <div class="col-md-12">
                                     <div class=" d-flex justify-content-center mt-3 gap-3">
                                         <button type="button" class="btn bg-success">Submit</button>
@@ -111,6 +113,36 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card ">
+                    <div class="card-header d-flex justify-content-between ">
+                        <h3>Project List</h3>
+                        <button type="button" class="btn bg-danger">Add</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-hover ">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No</th>
+                                    <th>Contact Person</th>
+                                    <th>Contact Number</th>
+                                    <th>Person EmailId</th>
+                                    <th>Total Employee Working</th>
+                                    <th>Project Name</th>
+                                    <!-- <th>Start Date</th>
+                                    <th>Expected End Date</th>
+                                    <th>Completed Date</th>
+                                    <th>Project Cost</th>
+                                    <th>Project Details</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
