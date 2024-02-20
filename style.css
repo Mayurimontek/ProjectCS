@@ -8,3 +8,28 @@ label{
     font-size: 14px;
 }
 
+
+    #tblExperience {
+        margin-top: 20px;
+    }
+
+    h5 {
+        color: #333;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn-container button {
+        margin-right: 5px;
+    }
+
+
